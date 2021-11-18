@@ -18,9 +18,9 @@ int main(){
         printf("\n -MENU-\n");
         printf("1.Ler a Matriz A\n");
         printf("2.Ler a matriz B\n");
-        printf("3.Multiplicar a Matriz A pela matriz B\n");
-        printf("4.Calcula a transposta da matriz A\n");
-        printf("5.Multiplica a matriz A pela tranposta da matriz B\n");
+        printf("3.Multiplicar a matriz A pela matriz B\n");
+        printf("4.Calcular a transposta da matriz A\n");
+        printf("5.Multiplicar a matriz A pela transposta da matriz B\n");
         printf("0.Para sair\n");
         printf("Digite a operação que deseja: ");
         scanf("%d", &resposta);

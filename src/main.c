@@ -199,8 +199,9 @@ int main(){
                 break;
 
             default:
-                printf("Nenhum item selecionado\n");
-                sleep(2);
+                printf("Nenhum item selecionado. Pressione um botão para continuar\n");
+                while(getchar() != '\n'); // Limpa o stdin
+                getchar(); // Espera a pessoa digitar ENTER
                 break;
         }
     }while (cont);

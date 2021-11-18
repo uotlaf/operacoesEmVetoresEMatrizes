@@ -15,3 +15,4 @@ make
 ./final
 ```
 
+Alunos: [Uotlaf](https://github.com/uotlaf/) e [Marvin023](https://github.com/marvinMV23)

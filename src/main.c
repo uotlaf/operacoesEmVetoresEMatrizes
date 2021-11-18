@@ -112,7 +112,7 @@ int main(){
                 getchar(); // Espera a pessoa digitar ENTER
                 break;
 
-            case 4:
+            case 4: // Transposta de A
                 if (matriza == NULL) {
                     printf("Matriz não configurada!\n");
                     sleep(2);

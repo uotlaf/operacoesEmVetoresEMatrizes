@@ -89,6 +89,13 @@ int main(){
                     break;
                 }
 
+                // Condição de existência da multiplicação
+                if (matriza_col != matrizb_lin) {
+                    printf("Não pode multiplicar: Num de colunas da matriz a é diferente do número de linhas da B\n");
+                    sleep(2);
+                    break;
+                }
+
                 resultado = MultiplicarMatriz(matriza, matrizb, matriza_lin, matriza_col, matrizb_lin, matrizb_col);
                 if (resultado == NULL) {
                     printf("Erro");
@@ -154,6 +161,14 @@ int main(){
                     sleep(2);
                     break;
                 }
+
+                // Condição de existência da multiplicação
+                if (matriza_col != matrizb_lin) {
+                    printf("Não pode multiplicar: Num de colunas da matriz a é diferente do número de linhas da B\n");
+                    sleep(2);
+                    break;
+                }
+
 
                 // Limpa e retorna os vetores para o padrão
                 if (transposta != NULL) {

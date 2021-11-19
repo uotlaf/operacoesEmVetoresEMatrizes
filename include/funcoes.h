@@ -10,7 +10,5 @@ float* MultiplicarMatriz(  float* vetora, float* vetorb,
 
 float* TranspostadeMatriz(float* vetor, int linhas, int colunas);
 
-//float* CriarMatriz(int altura, int largura);
-
 
 #endif // FUNCOES_H

@@ -15,7 +15,7 @@ float* MultiplicarMatriz(  float* vetora, float* vetorb,
         return NULL;
 
     int resulta, resultb; // Auxiliares
-    float* resultado = (float*)malloc(sizeof(float)*vetora_lin*vetorb_col);
+    float* resultado = (float*)malloc(sizeof(float)*vetora_lin  *vetorb_col);
 
     if (resultado == NULL )
         return NULL;
@@ -23,7 +23,7 @@ float* MultiplicarMatriz(  float* vetora, float* vetorb,
     for (int i = 0; i < vetora_lin; i++) {
         for (int j = 0; j < vetorb_col; j++) {
             resultado[(vetorb_col *i)+ j] = 0; // Limpa o vetor
-            for (int k = 0; k <= vetora_lin;k++) {
+            for (int k = 0; k < vetora_col;k++) {
                 // vetor[linha + offset]
                 resulta = vetora[(vetora_col*i) + k];
                 resultb = vetorb[(vetorb_col*k) + j];
@@ -32,6 +32,7 @@ float* MultiplicarMatriz(  float* vetora, float* vetorb,
             }
         }
     }
+
 
     return resultado;
 }

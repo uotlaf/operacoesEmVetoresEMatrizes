@@ -218,14 +218,6 @@ int main(){
                     break;
                 }
 
-                // Condição de existência da multiplicação
-                if (matriza_col != matrizb_lin) {
-                    printf("Não pode multiplicar: Num de colunas da matriz a é diferente do número de linhas da B\n");
-                    sleep(2);
-                    break;
-                }
-
-
                 // Limpa e retorna os vetores para o padrão
                 if (transposta != NULL) {
                     free(transposta);
@@ -239,7 +231,18 @@ int main(){
 
 
                 transposta = TranspostadeMatriz(matrizb, matrizb_lin, matrizb_col);
+
+
+                // Condição de existência da multiplicação para trans
+                if (matriza_col != matrizb_col) {
+                    printf("Não pode multiplicar: Num de colunas da matriz a é diferente do número de linhas da transposta de B\n");
+                    sleep(2);
+                    break;
+                }
+
                 resultado = MultiplicarMatriz(matriza, transposta, matriza_lin, matriza_col, matrizb_col, matrizb_lin);
+    
+
 
                 if (resultado == NULL) {
                     printf("Erro\n");
@@ -250,10 +253,13 @@ int main(){
                 printf("Concluído com sucesso!\n");
                 printf("Resultado: \n");
 
+ 
+
+
                 // Imprime o resultado
                 for (int i = 0; i < matriza_lin; i++) {
-                    for (int j = 0; j < matrizb_col; j++) {
-                        printf("%f ", resultado[(matrizb_col*i)+j]);
+                    for (int j = 0; j < matrizb_lin; j++) {
+                        printf("%f ", resultado[(matrizb_lin*i)+j]);
                     }
                        printf("\n");
                 }

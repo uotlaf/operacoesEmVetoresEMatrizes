@@ -15,4 +15,10 @@ make
 ./final
 ```
 
+## Informações:
+### Ambiente: Linux/gcc
+### Arquivos fonte: Todos em ./src
+### Cabeçalhos: Todos em ./include
+### Execut
+
 Alunos: [Uotlaf](https://github.com/uotlaf/) e [MarvinMV023](https://github.com/marvinMV23)

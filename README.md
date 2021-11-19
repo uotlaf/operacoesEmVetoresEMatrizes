@@ -16,9 +16,9 @@ make
 ```
 
 ## Informações:
-### Ambiente: Linux/gcc
-### Arquivos fonte: Todos em ./src
-### Cabeçalhos: Todos em ./include
-### Execut
+Ambiente: Linux/gcc\
+Arquivos fonte: Todos em ./src\
+Cabeçalhos: Todos em ./include\
+Executável: ./final
 
 Alunos: [Uotlaf](https://github.com/uotlaf/) e [MarvinMV023](https://github.com/marvinMV23)

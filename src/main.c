@@ -3,9 +3,13 @@
 #include <stdio.h>  // NULL
 #include <stdlib.h> // malloc
 
+#define True 1
+#define False 0
+
 int main(){
     int matriza_lin, matriza_col;
     int matrizb_lin, matrizb_col;
+    char test_char;
     int cont = 1, resposta;
     float* matriza = NULL, *matrizb = NULL, *resultado = NULL, *transposta = NULL;
 
@@ -27,10 +31,28 @@ int main(){
         switch (resposta) {
             case 1: // Fazer Matriz A
                 printf("Digite a altura da matriz A: ");
-                scanf("%d", &matriza_lin);
+                
+
+                // Anti-letras - matriza_lin
+                while (True) {
+                    if (scanf("%d", &matriza_lin) != 0) {
+                        break;
+                    } else {
+                        printf("Digite um número:");
+                        while(getchar() != '\n'); // Limpa o stdin
+                    }
+                }
 
                 printf("Digite a largura da matriz A: ");
-                scanf("%d", &matriza_col);
+                // Anti-letras - matriza_col
+                while (True) {
+                    if (scanf("%d", &matriza_col) != 0) {
+                        break;
+                    } else {
+                        printf("Digite um número:");
+                        while(getchar() != '\n'); // Limpa o stdin
+                    }
+                }
 
                 if (matriza != NULL) { // Limpa e retorna o vetor para o padrão
                     free(matriza);
@@ -48,18 +70,44 @@ int main(){
                 for (int i = 0; i < matriza_lin; i++) {
                     for (int j = 0; j < matriza_col; j++) {
                         printf("Digite o valor da posição %d:%d da matriz A: ", i, j);
-                        scanf("%f", &matriza[(matriza_col*i)+j]);
+                        
+                        // Verifica se a pessoa digitou uma letra
+                        while (True) {
+                            if (scanf("%f", &matriza[(matriza_col*i)+j]) != 0) {
+                                break;
+                            } else {
+                                printf("Digite um número:");
+                                while(getchar() != '\n'); // Limpa o stdin
+                            }
+                        }
                     }
                 }
                 break;
 
             case 2: // Fazer Matriz B
                 printf("Digite a altura da matriz B: ");
-                scanf("%d", &matrizb_lin);
+
+                // Anti-letras - matrizb_lin
+                while (True) {
+                    if (scanf("%d", &matrizb_lin) != 0) {
+                        break;
+                    } else {
+                        printf("Digite um número:");
+                        while(getchar() != '\n'); // Limpa o stdin
+                    }
+                }
 
                 printf("Digite a largura da matriz B: ");
-                scanf("%d", &matrizb_col);
 
+                // Anti-letras - matrizb_col
+                while (True) {
+                    if (scanf("%d", &matrizb_col) != 0) {
+                        break;
+                    } else {
+                        printf("Digite um número:");
+                        while(getchar() != '\n'); // Limpa o stdin
+                    }
+                }
                 if (matrizb != NULL) { // Limpa e retorna o vetor para o padrão
                     free(matrizb);
                     matrizb = NULL;
@@ -76,7 +124,16 @@ int main(){
                 for (int i = 0; i < matrizb_lin; i++) { 
                     for (int j = 0; j < matrizb_col; j++) {
                         printf("Digite o valor da posição %d:%d da matriz B: ", i, j);
-                        scanf("%f", &matrizb[(matrizb_col*i)+j]);
+                        
+                        // Verifica se a pessoa digitou uma letra
+                        while (True) {
+                            if (scanf("%f", &matrizb[(matrizb_col*i)+j]) != 0) {
+                                break;
+                            } else {
+                                printf("Digite um número:");
+                                while(getchar() != '\n'); // Limpa o stdin
+                            }
+                        }
                     }
                 }
                 break;

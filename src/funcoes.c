@@ -20,7 +20,6 @@ float* MultiplicarMatriz(  float* vetora, float* vetorb,
     if (resultado == NULL )
         return NULL;
 
-
     for (int i = 0; i < vetora_lin; i++) {
         for (int j = 0; j < vetorb_col; j++) {
             resultado[(vetorb_col *i)+ j] = 0; // Limpa o vetor
@@ -44,7 +43,7 @@ float* TranspostadeMatriz(float* vetor, int linhas, int colunas) {
     if (vetor == NULL || linhas <= 0 || colunas <= 0)
         return NULL;
 
-    float* resultado = (float*)malloc(sizeof(float) * colunas);
+    float* resultado = (float*)malloc(sizeof(float)* linhas * colunas);
 
     if (resultado == NULL)
         return NULL;

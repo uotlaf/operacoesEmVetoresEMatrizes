@@ -11,9 +11,6 @@ float* MultiplicarMatriz(  float* vetora, float* vetorb,
     if (vetora == NULL || vetorb == NULL)
         return NULL;
 
-    if (vetora_col != vetorb_lin)
-        return NULL;
-
     if (vetora_lin <= 0 || vetora_col <= 0 || vetorb_lin <= 0 || vetorb_col <= 0)
         return NULL;
 

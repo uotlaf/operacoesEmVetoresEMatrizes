@@ -7,7 +7,6 @@ int main(){
     int matriza_lin, matriza_col;
     int matrizb_lin, matrizb_col;
     int cont = 1, resposta;
-    char* lixo;
     float* matriza = NULL, *matrizb = NULL, *resultado = NULL, *transposta = NULL;
 
     do{
@@ -98,7 +97,7 @@ int main(){
 
                 resultado = MultiplicarMatriz(matriza, matrizb, matriza_lin, matriza_col, matrizb_lin, matrizb_col);
                 if (resultado == NULL) {
-                    printf("Erro");
+                    printf("Erro\n");
                     sleep(2);
                     break;
                 }
@@ -134,7 +133,7 @@ int main(){
                 resultado = TranspostadeMatriz(matriza, matriza_lin, matriza_col);
 
                 if (resultado == NULL) {
-                    printf("Erro");
+                    printf("Erro\n");
                     sleep(2);
                     break;
                 }
@@ -186,7 +185,7 @@ int main(){
                 resultado = MultiplicarMatriz(matriza, transposta, matriza_lin, matriza_col, matrizb_col, matrizb_lin);
 
                 if (resultado == NULL) {
-                    printf("Erro");
+                    printf("Erro\n");
                     sleep(2);
                     break;
                 }

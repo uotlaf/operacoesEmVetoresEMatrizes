@@ -9,7 +9,6 @@
 int main(){
     int matriza_lin, matriza_col;
     int matrizb_lin, matrizb_col;
-    char test_char;
     int cont = 1, resposta;
     float* matriza = NULL, *matrizb = NULL, *resultado = NULL, *transposta = NULL;
 

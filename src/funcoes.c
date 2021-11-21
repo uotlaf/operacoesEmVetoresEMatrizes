@@ -3,6 +3,9 @@
 #include <stdlib.h> // malloc
 
 
+#ifndef FUNCOES_C_
+#define FUNCOES_C_
+
 float* MultiplicarMatriz(  float* vetora, float* vetorb, 
                             int vetora_lin, int vetora_col, 
                             int vetorb_lin, int vetorb_col) {
@@ -57,3 +60,6 @@ float* TranspostadeMatriz(float* vetor, int linhas, int colunas) {
 
     return resultado;
 }
+
+
+#endif

@@ -2,6 +2,9 @@
 #include <stdio.h>  // NULL
 #include <stdlib.h> // malloc
 
+#ifndef CONVERSOES_C_
+#define CONVERSOES_C_
+
 float** vetorToMatriz(float* vetor , int linhas, int colunas ) {
     if (vetor == NULL)
         return NULL;
@@ -43,3 +46,5 @@ float*  matriztoVetor(float** matriz, int linhas, int colunas) {
 
     return resultado;
 }
+
+#endif

@@ -1,4 +1,4 @@
-# vetores_matrizes_ed
+# operacoesEmVetoresEMatrizes
 ## Trabalho feito para primeira nota de Estrutura de Dados I
 
 ![Program](https://i.imgur.com/3QKaEwV.png)
